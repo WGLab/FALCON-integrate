@@ -1,7 +1,7 @@
 # We suggest that you not add any rules here. Instead, customize `FALCON-make/makefile`.
 
 FALCON_PREFIX?=$(abspath fc_env)
-FALCON_WORKSPACE?=$(abspath FALCON-workspace)
+FALCON_WORKSPACE?=$(abspath .)
 export FALCON_PREFIX
 export FALCON_WORKSPACE
 
@@ -9,7 +9,8 @@ install:
 
 # Activate virtualenv environment and delegate the rule to `./FALCON-make/makefile`.
 %:
-	 . ${FALCON_PREFIX}/bin/activate; ${MAKE} -C ./FALCON-make/ $@
+	ln -sf ../../git-sym/git-sym ${FALCON_PREFIX}/bin/git-sym
+	. ${FALCON_PREFIX}/bin/activate; ${MAKE} -C ./FALCON-make/ $@
 
 # These can be helpful for setup.
 pre:
