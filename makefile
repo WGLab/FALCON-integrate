@@ -14,7 +14,7 @@ install:
 
 # These can be helpful for setup.
 pre:
-	git submodule update --init --recursive 
+	git submodule update --init --recursive
 virtualenv:
 	mkdir -p ${FALCON_PREFIX}
 	virtualenv -p $(shell which python2.7) --no-site-packages  --always-copy ${FALCON_PREFIX}
