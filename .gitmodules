@@ -3,10 +3,10 @@
 	url = git://github.com/PacificBiosciences/pypeFLOW.git
 [submodule "DALIGNER"]
 	path = DALIGNER
-	url = git://github.com/pb-jchin/DALIGNER.git
+	url = git://github.com/pb-cdunn/DALIGNER.git
 [submodule "DAZZ_DB"]
 	path = DAZZ_DB
-	url = git://github.com/pb-jchin/DAZZ_DB.git
+	url = git://github.com/pb-cdunn/DAZZ_DB.git
 [submodule "FALCON"]
 	path = FALCON
 	url = git://github.com/PacificBiosciences/FALCON.git
