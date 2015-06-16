@@ -17,6 +17,6 @@ pre:
 	git submodule update --init --recursive
 virtualenv:
 	mkdir -p ${FALCON_PREFIX}
-	virtualenv -p $(shell which python2.7) --no-site-packages  --always-copy ${FALCON_PREFIX}
+	python2.7 virtualenv/virtualenv.py --no-site-packages  --always-copy ${FALCON_PREFIX}
 check:
 	. ${FALCON_PREFIX}/bin/activate; which python
