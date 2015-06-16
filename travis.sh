@@ -6,7 +6,7 @@ set -vex
 
 #env | sort
 #sudo pip install virtualenv
-make pre
+make pre # Travis pulls submodules for us, but not --recursive
 make virtualenv
 make check
 make -j
