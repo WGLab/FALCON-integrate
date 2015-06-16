@@ -20,3 +20,5 @@ virtualenv:
 	python2.7 virtualenv/virtualenv.py --no-site-packages  --always-copy ${FALCON_PREFIX}
 check:
 	. ${FALCON_PREFIX}/bin/activate; which python
+
+.PHONY: pre virtualenv check
