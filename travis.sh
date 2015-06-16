@@ -5,8 +5,7 @@
 set -vex
 
 #env | sort
-which python
-pip install virtualenv
+#sudo pip install virtualenv
 make pre
 make virtualenv
 make check
